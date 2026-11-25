@@ -1,5 +1,12 @@
 # Cuaca Kita
 
+## Identitas Mahasiswa
+
+- **Nama:** Jovita Fashya Islami
+- **NIM:** H1D024125
+- **Shift KRS:** Shift B
+- **Shift Praktikum:** Shift I
+
 Aplikasi cuaca Flutter berbahasa Indonesia. Data cuaca dan hasil pencarian kota
 diambil langsung dari Open-Meteo; lokasi favorit disimpan di perangkat.
 
