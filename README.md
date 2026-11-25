@@ -61,13 +61,26 @@ lib/
 - **Service** (`services/`) melakukan HTTP GET ke API dan menyimpan favorit
   dengan `shared_preferences`.
 
-## API
+## Dokumentasi API
+
+Dokumentasi resmi sesuai modul:
+
+- [Weather Forecast API — Open-Meteo](https://open-meteo.com/en/docs)
+- [Geocoding API — Open-Meteo](https://open-meteo.com/en/docs/geocoding-api)
+
+Aplikasi mengirim HTTP GET ke endpoint API berikut. Endpoint dasar perlu
+parameter agar dapat mengembalikan data:
 
 - Geocoding: `https://geocoding-api.open-meteo.com/v1/search`
 - Prakiraan: `https://api.open-meteo.com/v1/forecast`
 
-Prakiraan meminta data cuaca terkini dan harian, menggunakan `timezone=auto`
-serta lima hari prakiraan.
+Contoh request yang bisa dibuka:
+
+- [Contoh data cuaca Jakarta](https://api.open-meteo.com/v1/forecast?latitude=-6.2088&longitude=106.8456&current=temperature_2m%2Crelative_humidity_2m%2Capparent_temperature%2Cprecipitation%2Cweather_code%2Cwind_speed_10m&daily=weather_code%2Ctemperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_probability_max&timezone=auto&forecast_days=5)
+- [Contoh pencarian kota Semarang](https://geocoding-api.open-meteo.com/v1/search?name=Semarang&count=10&language=id&format=json)
+
+Request prakiraan menggunakan koordinat lokasi terpilih, data cuaca terkini
+dan harian, `timezone=auto`, serta lima hari prakiraan.
 
 ## Screenshot
 
